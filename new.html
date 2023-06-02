@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PDF Form Filler</title>
+    <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.0/dist/pdf-lib.js"></script>
+</head>
+
+<body>
+    <h1>Fill the PDF Form</h1>
+    <form> <label for="imonth">Islamic Month Name:</label> <input id="imonth" required="" type="text"><br>
+        <br>
+        <label for="month">Month:</label> <input id="month" required="" type="month"><br>
+        <br>
+        <label for="division">Division:</label> <input id="division" required="" type="text"><br>
+        <br>
+        <label for="name">Division Mushavrat Name(Umme/Binte):</label> <input id="name" required="" type="text"><br>
+        <br>
+        <label for="kabina">Kabina:</label> <input id="kabina" required="" type="text"><br>
+        <br>
+        <table style="text-align: center; width: 100%;" border="1">
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top;">नम्बर<br>
+                        शुमार<br>
+                    </td>
+                    <td style="vertical-align: middle; text-align: center;"> मदनी
+                        काम<br>
+                    </td>
+                    <td>दौरानिया<br>
+                    </td>
+                    <td>पेहला हफ़्ता<br>
+                    </td>
+                    <td>दूसरा हफ़्ता<br>
+                    </td>
+                    <td>तीसरा हफ़्ता<br>
+                    </td>
+                    <td>चौथा हफ़्ता<br>
+                    </td>
+                    <td>पांचवां हफ़्ता<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="4" style="vertical-align: middle; text-align: center;"> 1<br>
+                        <br>
+                        <br>
+                    </td>
+                    <td style="vertical-align: middle; text-align: center;">(a) हर
+                        हफ़्ते अपनी ह़ुदूद के अलग अलगज़ैली ह़ल्क़ों के तीन और जामिअ़तुल मदीना
+                        /मद्रसतुल मदीना (लिल बनात) में होने वाले एक हफ़्तावार सुन्नतों भरे
+                        इजतिमाअ़ में अव्वल ता आख़िर शिर्कत ।<br>
+                    </td>
+                    <td>2 घन्टे<br>
+                    </td>
+                    <td style="text-align: center; vertical-align: middle; width: 100px;"> <label>ज़ैली
+                            ह़ल्क़ा</label><br>
+                        <input size="10" id="halka1" type="text"><br>
+                        <br>
+                        <input size="5" id="to1" type="time"> To <input size="5" id="from1" type="time"><br>
+                    </td>
+                    <td style="vertical-align: middle; text-align: center; width: 100px;"> <label>ज़ैली
+                            ह़ल्क़ा</label><br>
+                        <input size="10" id="halka2" type="text"><br>
+                        <br>
+                        <input size="5" id="to2" type="time"> To <input size="5" id="from2" type="time">
+                    </td>
+                    <td style="vertical-align: middle; text-align: center; width: 100px;"> <label>ज़ैली
+                            ह़ल्क़ा</label><br>
+                        <input size="10" id="halka3" type="text"><br>
+                        <br>
+                        <input size="5" id="to3" type="time"> To <input size="5" id="from3" type="time">
+                    </td>
+                    <td style="vertical-align: middle; text-align: center; width: 100px;"> <label>जामिअ़तुल
+                            मदीना /<br>
+                            मद्रसतुल मदीना<br>
+                            (लिल बनात)</label><br>
+                        <input size="10" id="halka4" type="text"><br>
+                        <br>
+                        <input size="5" id="to4" type="time"> To <input size="5" id="from4" type="time">
+                    </td>
+                    <td style="vertical-align: middle; text-align: center; width: 100px;"> <label>ज़ैली
+                            ह़ल्क़ा</label><br>
+                        <input size="10" id="halka5" type="text"><br>
+                        <br>
+                        <input size="5" id="to5" type="time"> To <input size="5" id="from5" type="time">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: middle;"> (b)इनफ़िरादी कोशिश व आख़िर के
+                        मदनी
+                        काम ।<br>
+                    </td>
+                    <td>26 मिनट<br>
+                    </td>
+                    <td><input size="5" id="bto1" type="time"><br> To <br><input size="5" id="bfrom1" type="time"> </td>
+                    <td><input size="5" id="bto2" type="time"><br> To <br><input size="5" id="bfrom2" type="time"> </td>
+                    <td><input size="5" id="bto3" type="time"><br> To <br><input size="5" id="bfrom3" type="time"> </td>
+                    <td colspan="2" rowspan="1"><input size="5" id="bto4" type="time"><br> To <br><input size="5"
+                            id="bfrom4" type="time">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: middle;">(c)ऐसी इस्लामी बहनें जो
+                        पेहले मदनी
+                        माह़ोल से वाबस्ता थीं, अब नहीं आतीं, उन के
+                        घर जा कर ज़रूर इनफ़िरादी कोशिश करना या अपनी मातह्‌़त इस्लामी बहनों की
+                        ख़्ाुशी या ग़मी के मौक़अ़ पर दिलजूई के लिए जाना ।<br>
+                    </td>
+                    <td>26 मिनट
+                    </td>
+                    <td><label>ज़ैली ह़ल्क़ा</label><br>
+                        <input size="10" id="chalka1" type="text"><br>
+                        <br>
+                        <input size="5" id="cto1" type="time"><br> To <br><input size="5" id="cfrom1" type="time">
+                    </td>
+                    <td><label>ज़ैली ह़ल्क़ा</label><br>
+                        <input size="10" id="chalka2" type="text"><br>
+                        <br>
+                        <input size="5" id="cto2" type="time"><br> To <br><input size="5" id="cfrom2" type="time">
+                    </td>
+                    <td><label>ज़ैली ह़ल्क़ा</label><br>
+                        <input size="10" id="chalka3" type="text"><br>
+                        <br>
+                        <input size="5" id="cto3" type="time"><br> To <br><input size="5" id="cfrom3" type="time">
+                    </td>
+                    <td><label>ज़ैली ह़ल्क़ा</label><br>
+                        <input size="10" id="chalka4" type="text"><br>
+                        <br>
+                        <input size="5" id="cto4" type="time"><br> To <br><input size="5" id="cfrom4" type="time">
+                    </td>
+                    <td><label>ज़ैली ह़ल्क़ा</label><br>
+                        <input size="10" id="chalka5" type="text"><br>
+                        <br>
+                        <input size="5" id="cto5" type="time"><br> To <br><input size="5" id="cfrom5" type="time">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: middle;">(d)हर हफ़्तावार सुन्नतों भरे
+                        इजतिमाअ़ के
+                        आख़िर में ज़िम्मेदारान के साथ हदफ़ के
+                        सिलसिले में मदनी मश्वरा । (माह में एक बार)<br>
+                    </td>
+                    <td>26 मिनट
+                    </td>
+                    <td colspan="5" rowspan="1" style="vertical-align: middle; text-align: center;"> <input id="dto" type="time">To
+                        <input id="dfrom" type="time"><br>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <button id="generateBtn">Generate PDF</button>
+    </form>
+    <script src="script1.js"></script>
+</body>
+
+</html>
